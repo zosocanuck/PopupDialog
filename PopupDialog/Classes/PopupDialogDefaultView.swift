@@ -75,7 +75,7 @@ final public class PopupDialogDefaultView: UIView {
         let imageView = UIImageView(frame: .zero)
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .ScaleAspectFill
-        imageView.layer.maskToBounds=YES;
+        imageView.clipsToBounds = true
         return imageView
     }()
 
